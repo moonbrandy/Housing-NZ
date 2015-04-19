@@ -3035,6 +3035,11 @@
         tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
 
         var options = {
+          title: "Housing NZ tree map",
+          useWeightedAverageForAggregation: true,
+          titleTextStyle: { color: 'black',
+                              fontSize: 20,
+                                bold: true},
           minColor: '#f00',
           maxColor: '#0d0',
           headerHeight: 15,
@@ -3059,7 +3064,6 @@
     
   </head>
   <body>
-    <div><h2> Housing NZ tree map</h2></div>
     <div id="chart_div" style="width: 90%; height: 90%;"></div>
 
   </body>
